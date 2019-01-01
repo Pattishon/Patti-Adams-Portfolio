@@ -150,6 +150,21 @@ ul.drop-down-menu-mobile  a{
 	font-size: 20px;
 }
 
+/*===========================================================
+*
+*	formularz
+*
+==============================================================*/
+span.required_form{
+            font-size: small;
+        }
+.invalid_form{
+    background: red;
+}
+
+.form-errors{
+    color: red;
+}
 
 
 
