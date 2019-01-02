@@ -1,5 +1,10 @@
 /*
 !!!!!!!!!!!!!!!!!!do poprawy body i wrapper nie są od samej góry. Dlaczego - no idea!
+
+
+!!!! do poprawy drop down menu, pojawia się po najechaniu na miejsce, gdzie się pojawi a nie tylko na nadrzędny li, poziom wyżej. zastosowane obejsce z opcją display
+
+
 */
 
 /*==============================================================
@@ -10,7 +15,7 @@
 body{margin: 0px auto;}
 #wrapper{
 	max-width: 1170px;
-	margin: 15px;;
+	margin: 15px auto;
 }
 
 
@@ -58,23 +63,28 @@ body{margin: 0px auto;}
 					position: relative;
 				}
 				ul.drop-down-menu{
-					opacity: 0;
-					height: 0;
+					/*opacity: 0;
+					height: 0;*/
 					position: absolute;
 					transition: opacity .3s;
 					padding-top: 5px;
-					
+					display: none;
 				}
 				ul.drop-down-menu li{
 					display: block;
 					padding: 5px;
 				}
-				.nav-main li:hover ul.drop-down-menu{
-					opacity: 1;
-					height: auto;
+				
+				.nav-main > li:hover ul.drop-down-menu{
+					/*opacity: 1;
+					height: auto;*/
+					display: block;
 				}
 				
-						
+		/*for form */		
+		article.main-content-form{
+			max-width: 50%;
+		}	
 	}
 	
 	/*======================================
@@ -177,3 +187,27 @@ div.social{
 .credentials{
 	padding: 10px;
 }
+
+/*==============================================================
+*
+*	form
+*
+==============================================================*/
+article.main-content-form{
+	margin: 0 auto;
+	padding: 10px;
+}
+input, textarea{
+	padding: 10px;
+	margin-bottom: 15px;
+}
+input[type="submit"]{
+	width: 100px;	
+	float: left;
+}
+label{
+	float: left;
+}
+
+	
+	

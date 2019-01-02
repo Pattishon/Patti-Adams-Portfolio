@@ -152,19 +152,40 @@ ul.drop-down-menu-mobile  a{
 
 /*===========================================================
 *
-*	formularz
+*	form
 *
 ==============================================================*/
 span.required_form{
             font-size: small;
         }
 .invalid_form{
-    background: red;
+    border: 2px solid red;
 }
 
 .form-errors{
-    color: red;
+    color: #8f6054;
 }
+input, textarea{
+	background: #8f6054;
+	width: 100%;
+	border: .5px solid #fbf9f8;
+	transition: background 0.3s;
+}
+input[type="text"]:focus, input[type="tel"]:focus, textarea:focus, input[type="submit"]:hover{
+	background: #c9aaa2;	
+}
+
+textarea{
+	resize: none;
+}
+input[type="submit"]{
+	text-transform: uppercase;	
+}
+input[type="submit"]:hover{
+	cursor: pointer;	
+}
+
+
 
 
 

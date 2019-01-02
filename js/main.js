@@ -20,12 +20,11 @@ closeMenuIcon.onclick = function () {
 	menuSmall.style.display = "none";
 	
 }
-	
+
 // form validator - checks if the required fileds are filled and if e-mail is correct
 	
 	function displayErrors (errors, form) {
         
-        //var p = document.createElement("p");
         var p = form.querySelector(".form-errors");
         
         if ( !p ){
@@ -39,10 +38,11 @@ closeMenuIcon.onclick = function () {
         form.insertBefore(p, form.children[0]);
     }
     
-    var form = document.querySelector("#form"), //pobiera cały formularz    
-        nameField = form.querySelector("input[name='name']"),//pobiera imię
-        emailField = form.querySelector("input[name='email']"),//pobiera email
-        messageField = form.querySelector("textarea[name='message']");//pobiera email
+    var form = document.querySelector("#form"), //selects whole form   
+        nameField = form.querySelector("input[name='name']"),//selects name filed
+        emailField = form.querySelector("input[name='email']"),//selects mail
+		phoneField = form.querySelector("input[name='phone']"),
+        messageField = form.querySelector("textarea[name='message']");//selects message filed
         
     form.addEventListener("submit", function(e){
         
@@ -50,23 +50,31 @@ closeMenuIcon.onclick = function () {
         
         var errors = [];
         
-       //sprawdzanie czy pola są uzupełnione poprawnie:
+       //fileds complement checked 
+	   
         if ( nameField.value === "" ){
-            errors.push("Podaj imię.");
+            errors.push("Please enter your name.");
             nameField.classList.add("invalid_form");}
         else{
             nameField.classList.remove("invalid_form"); 
         }
         
         if ( emailField.value.indexOf("@" ) === -1 || emailField.value.indexOf(".") === -1 ){//jeżeli wisana wartość nie zawiera @ lub .
-            errors.push("Podaj poprawy adres e-mail.");
+            errors.push("Please provide correct e-mail address.");
             emailField.classList.add("invalid_form");}
         else{
           emailField.classList.remove("invalid_form");                      
         }
         
+		/*if ( phoneField.value == [0-9][0-9] || phoneField.value != ("") ){
+			errors.push("Please provide correct phone number.");
+            phoneField.classList.add("invalid_form");}
+		else{
+			phoneField.classList.remove("invalid_form");
+		}*/
+		
         if ( messageField.value === "" ){
-            errors.push("Wpisz wiadomość.");
+            errors.push("Please enter your message.");
             messageField.classList.add("invalid_form");}
         else{
             messageField.classList.remove("invalid_form"); 
@@ -82,5 +90,7 @@ closeMenuIcon.onclick = function () {
         
             
         
-    }, false); 
+}, false); 
+
+
 })();
