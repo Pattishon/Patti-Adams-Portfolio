@@ -21,6 +21,7 @@ ul{
 }
 
 p{padding: 10px;}
+
 /*
  * A better looking default horizontal rule
  */
@@ -57,7 +58,7 @@ color scheme Almost Mauve https://www.w3schools.com/w3css/w3css_color_generator.
 
 body{
 	background: #c9aaa2;
-}
+	}
 *{
 	color: #fbf9f8;
 }
@@ -133,6 +134,13 @@ ul.drop-down-menu-mobile  a{
 	h1{
 		font-size: 30px;
 		font-family: "Cinzel", serif;
+		text-transform: uppercase;
+	}
+	h2{
+		font-size: 20px;
+		font-family: "Cinzel", serif;
+		text-transform: uppercase;
+		font-weight: normal;
 	}
 	
 	p{
@@ -185,6 +193,23 @@ input[type="submit"]:hover{
 	cursor: pointer;	
 }
 
+/*===========================================================
+*
+*	gallery
+*
+==============================================================*/
+.gallery_title{
+	margin-bottom: 30px;
+	
+}
+.grid_gallery_item{
+	filter: grayscale(100%);
+	transition: 0.5s;
+}
+.grid_gallery_item:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
 
 
 
