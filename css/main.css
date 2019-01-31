@@ -1,0 +1,228 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	
+	font-family: "Open Sans Condensed", sans-serif;
+	transition: color .3s linear;
+}
+body, #wrapper{
+	border: 0.1px solid #c9aaa2;
+}
+a, a:visited, a:active{
+	text-decoration: none;	
+}
+
+ul{
+	list-style: none;
+	list-style-position:inside;
+}
+
+p{padding: 10px;}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #fbf9f8;
+    margin: 1em 0;
+    padding: 0;
+}
+/*===========================================================
+*
+*colors
+*
+*
+*
+*
+color scheme Almost Mauve https://www.w3schools.com/w3css/w3css_color_generator.asp
+	#fefdfd w3-theme-l5
+	#fbf9f8 w3-theme-l4
+	#f7f2f1 w3-theme-l3
+	#f3ecea w3-theme-l2
+	#eee5e3 w3-theme-l1
+	#eadedb w3-theme
+	#d9c4bf w3-theme-d1
+	#c9aaa2 w3-theme-d2
+	#b89086 w3-theme-d3
+	#a77669 w3-theme-d4
+	#8f6054 w3-theme-d5
+*
+
+==============================================================*/
+
+body{
+	background: #c9aaa2;
+	}
+*{
+	color: #fbf9f8;
+}
+.active-page, a:hover, .nav-main li a:hover i, a i:hover, #close-menu:hover{
+	color: #8f6054;
+}
+.site-title a:hover{
+	color: #fbf9f8;
+}
+ul.drop-down-menu{
+	background: #c9aaa2;
+}
+
+img.main-image-miniature{
+		border: 1px solid #fbf9f8;		
+	}
+
+
+	
+	
+
+/*===========================================================
+*
+*	header
+*
+==============================================================*/
+
+.site-title a{
+	font-size: 35px;
+	
+	
+}
+
+.nav-main li a, .site-title a, #nav-small a{
+	text-transform: uppercase;
+	font-family: "Cinzel", serif;
+}
+
+/*========navigation========*/
+
+
+/*drop down menu*/
+ul.drop-down-menu  a{
+	font-size: small;
+}
+ul.drop-down-menu{
+	border-radius: 0 0 10px 10px;
+}
+
+/* menu for mobile */
+#nav-small{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	font-size: 30px;
+}	
+ul.drop-down-menu-mobile  a{
+		font-size: 20px;
+	}
+	
+
+/*===========================================================
+*
+*	main content
+*
+==============================================================*/
+
+	
+	div.main-description{
+		text-align: center;
+	}
+	
+	h1{
+		font-size: 30px;
+		font-family: "Cinzel", serif;
+		text-transform: uppercase;
+	}
+	h2{
+		font-size: 20px;
+		font-family: "Cinzel", serif;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+	
+	p{
+		padding: 10px;		
+	}
+/*===========================================================
+*
+*footer
+*
+==============================================================*/
+
+/*========social======== do przerobienia z font awesome!*/
+.social-icon i{	
+	transition: .5s;
+	font-size: 20px;
+}
+
+/*===========================================================
+*
+*	form
+*
+==============================================================*/
+span.required_form{
+            font-size: small;
+        }
+.invalid_form{
+    border: 2px solid red;
+}
+
+.form-errors{
+    color: #8f6054;
+}
+input, textarea{
+	background: #8f6054;
+	width: 100%;
+	border: .5px solid #fbf9f8;
+	transition: background 0.3s;
+}
+::placeholder{
+color: white;
+}
+input[type="text"]:focus, input[type="tel"]:focus, textarea:focus, input[type="submit"]:hover{
+	background: #c9aaa2;	
+}
+
+textarea{
+	resize: none;
+}
+input[type="submit"]{
+	text-transform: uppercase;	
+}
+input[type="submit"]:hover{
+	cursor: pointer;	
+}
+
+/*===========================================================
+*
+*	gallery
+*
+==============================================================*/
+.gallery_title{
+	margin-bottom: 30px;
+	
+}
+.flex_gallery_item{
+	filter: grayscale(100%);
+	transition: 0.5s;
+}
+.flex_gallery_item:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

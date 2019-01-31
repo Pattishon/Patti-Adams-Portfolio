@@ -1,0 +1,10 @@
+span.required_form{
+            font-size: small;
+        }
+.invalid_form{
+    background: red;
+}
+
+.form-errors{
+    color: red;
+}
