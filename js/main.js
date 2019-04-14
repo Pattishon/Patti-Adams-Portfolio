@@ -21,7 +21,10 @@
 	
     }
 
+let top = document.getElementById("top");
 
-
+top.addEventListener('click', function(){
+    window.scrollBy(0, -1 * window.pageYOffset);
+})
 
 })();

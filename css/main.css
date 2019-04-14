@@ -73,7 +73,9 @@ ul.drop-down-menu{
 img.main-image-miniature{
 		border: 1px solid #fbf9f8;		
 	}
-
+#top{
+    cursor: pointer;
+}
 
 	
 	
