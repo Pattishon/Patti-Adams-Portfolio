@@ -7,7 +7,7 @@
         
         var p = form.querySelector(".form-errors");
         
-        if ( !p ){
+        if (!p){
             p = document.createElement("p");
         }
         
@@ -32,35 +32,35 @@
         
        //fileds complement checked 
 	   
-        if ( nameField.value === "" ){
+        if (nameField.value === ""){
             errors.push("Please enter your name.");
             nameField.classList.add("invalid_form");}
         else{
             nameField.classList.remove("invalid_form"); 
         }
         
-        if ( emailField.value.indexOf("@" ) === -1 || emailField.value.indexOf(".") === -1 ){//jeżeli wisana wartość nie zawiera @ lub .
+        if (emailField.value.indexOf("@") === -1 || emailField.value.indexOf(".") === -1){//jeżeli wisana wartość nie zawiera @ lub .
             errors.push("Please provide correct e-mail address.");
             emailField.classList.add("invalid_form");}
         else{
           emailField.classList.remove("invalid_form");                      
         }
         
-		/*if ( phoneField.value == [0-9][0-9] || phoneField.value != ("") ){
+		/*if (phoneField.value == [0-9][0-9] || phoneField.value != ("")){
 			errors.push("Please provide correct phone number.");
             phoneField.classList.add("invalid_form");}
 		else{
 			phoneField.classList.remove("invalid_form");
 		}*/
 		
-        if ( messageField.value === "" ){
+        if (messageField.value === ""){
             errors.push("Please enter your message.");
             messageField.classList.add("invalid_form");}
         else{
             messageField.classList.remove("invalid_form"); 
         }
         
-        if( errors.length ){            
+        if(errors.length){            
             displayErrors(errors, form);
         }           
         else{
